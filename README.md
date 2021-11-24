@@ -4,7 +4,8 @@ Parse GCC-generated map file and show memory usage report.
 
 ## Install dependencies
 
-Install **Node.js** with the following command:
+Install **Node.js**.
+On Ubuntu you can use the following command:
 
 ```sh
 sudo apt install nodejs
