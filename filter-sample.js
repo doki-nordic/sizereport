@@ -1,12 +1,12 @@
 
 function filter(entry) {
 	/* entry object fields:
-	 *     sec     : string            Section name
-	 *     addr    : number            Address of the symbol
-	 *     size    : number            Size of the symbol
-	 *     library : string|undefined  Source library name or undefined if file was linked directly
-	 *     file    : string            Source object file name
-	 *     memory  : string            Memory name where the symbol is located
+	 *     sec     : string  Section name
+	 *     addr    : number  Address of the symbol
+	 *     size    : number  Size of the symbol
+	 *     library : string  Source library name or empty string if file was linked directly
+	 *     file    : string  Source object file name
+	 *     memory  : string  Memory name where the symbol is located
 	 *
 	 * filter() function returns:
 	 *     - false to completely ignore this entry in the report.
