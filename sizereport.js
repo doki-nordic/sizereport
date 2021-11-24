@@ -84,7 +84,7 @@ function parseMap(file) {
 			file = sec == '*fill*' ? sec : '*unknown*';
 		}
 		file = file.trim();
-		let library = undefined;
+		let library = '';
 		if ((m = file.match(/^(.+)\((.+)\)$/))) {
 			library = m[1].trim();
 			file = m[2].trim();
@@ -130,7 +130,7 @@ function removeOverlaps(map, memories) {
 		if (prev !== null) {
 			let size = i - prev - 1;
 			if (size <= GAP_LIMIT && size > 0) {
-				addToMap(newMap, memories, { sec: '*gap*', addr: prev + 1, size: size, library: undefined, file: '*gap*' });
+				addToMap(newMap, memories, { sec: '*gap*', addr: prev + 1, size: size, library: '', file: '*gap*' });
 			}
 		}
 		prev = i;
