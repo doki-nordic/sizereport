@@ -4,8 +4,9 @@ set -e
 rm -Rf web-build
 mkdir -p web-build
 cd web-build
-find ../web -mindepth 1 -maxdepth 1 ! -name node_modules ! -name '.*' ! -name build -exec cp -R {} ./ \;
-npm install
+find ../web -mindepth 1 -maxdepth 1 ! -name '.*' ! -name build -exec cp -R {} ./ \;
+npm install --save-dev html-inline-css-webpack-plugin html-inline-script-webpack-plugin
+npm update
 npm run eject << 'EOF'
 y
 y
@@ -14,8 +15,7 @@ y
 y
 
 EOF
-npm install
-npm install --save-dev html-inline-css-webpack-plugin html-inline-script-webpack-plugin
+npm update
 
 line=`grep -n 'InlineChunkHtmlPlugin(' config/webpack.config.js | cut -f1 -d:`
 head -n $line config/webpack.config.js > tmp.tmp
@@ -39,4 +39,4 @@ rm -f tmp.tmp tmp2.tmp
 
 npm run build
 
-cp build/index.html ../main.html
+python ../strings-compress/html-compress.py -o ../main.html build/index.html
