@@ -33,9 +33,12 @@ import {
   ContextMenu2,
   Tooltip2
 } from "@blueprintjs/popover2";
+import {
+  IconNames
+} from "@blueprintjs/icons";
 
 import "@blueprintjs/core/lib/css/blueprint.css";
-import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+//import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/popover2/lib/css/blueprint-popover2.css";
 import './App.css';
 
@@ -116,7 +119,7 @@ function App() {
               </span>
             </div>
           ),
-          //icon: "document",
+          icon: IconNames.Document,
           isExpanded: true,
           childNodes: [
             {
@@ -130,7 +133,7 @@ function App() {
                   </span>
                 </div>
               ),
-              //icon: "small-square"
+              icon: IconNames.SmallSquare,
             },
             {
               id: 6,
@@ -164,7 +167,7 @@ function App() {
               </span>
             </div>
           ),
-          //icon: "document"
+          icon: IconNames.Document
         }
       ]
     }

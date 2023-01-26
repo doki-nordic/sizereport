@@ -19,8 +19,10 @@ npm install --save-dev html-inline-css-webpack-plugin html-inline-script-webpack
 
 line=`grep -n 'InlineChunkHtmlPlugin(' config/webpack.config.js | cut -f1 -d:`
 head -n $line config/webpack.config.js > tmp.tmp
-echo "isEnvProduction && shouldInlineRuntimeChunk && new HTMLInlineCSSWebpackPlugin()," >> tmp.tmp
-echo "isEnvProduction && shouldInlineRuntimeChunk && new HtmlInlineScriptPlugin()," >> tmp.tmp
+echo "new HTMLInlineCSSWebpackPlugin()," >> tmp.tmp
+echo "new HtmlInlineScriptPlugin()," >> tmp.tmp
+echo "new webpack.NormalModuleReplacementPlugin(/.*\\/generated-icons\\/16px\\/paths$/, path.resolve(__dirname, '../src/icons16.ts'))," >> tmp.tmp
+echo "new webpack.NormalModuleReplacementPlugin(/.*\\/generated-icons\\/20px\\/paths$/, path.resolve(__dirname, '../src/icons20.ts'))," >> tmp.tmp
 echo "new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 1 })," >> tmp.tmp
 tail -n +$((line+1)) config/webpack.config.js >> tmp.tmp
 
