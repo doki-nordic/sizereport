@@ -41,6 +41,7 @@ import "@blueprintjs/core/lib/css/blueprint.css";
 //import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import "@blueprintjs/popover2/lib/css/blueprint-popover2.css";
 import './App.css';
+import icons from './CustomIcons';
 
 function App() {
   let nodes = [
@@ -103,7 +104,7 @@ function App() {
             </table>
           }
         >
-          <Icon className="bp4-tree-node-icon" icon="folder-close" />
+          <Icon className="bp4-tree-node-icon" icon={icons.Aaa} />
         </Tooltip2>
       ),
       isExpanded: true,
@@ -150,7 +151,7 @@ function App() {
                 <Icon
                   className="bp4-tree-node-icon"
                   color="red"
-                  icon="small-square"
+                  icon={icons.SmallSquare}
                 />
               )
             }
@@ -176,12 +177,12 @@ function App() {
     <div>
       <Navbar className={Classes.DARK}>
         <NavbarGroup align={Alignment.LEFT}>
-          <Button text="FLASH" icon="database" />
-          <Button text="RAM" icon="database" intent={Intent.PRIMARY} />
+          <Button text="FLASH" icon={icons.Database} />
+          <Button text="RAM" icon={icons.Database} intent={Intent.PRIMARY} />
         </NavbarGroup>
         <NavbarGroup align={Alignment.LEFT}>
           <NavbarDivider />
-          <Button text="Libraries" icon="folder-close" />
+          <Button text="Libraries" icon={icons.FolderClose} />
           <Button text="Files" icon="document" intent={Intent.PRIMARY} />
           <Button text="Symbols" icon="small-square" intent={Intent.PRIMARY} />
         </NavbarGroup>
