@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { customizeIcons } from './CustomIcons';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 customizeIcons();
 
@@ -12,7 +14,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
+  <Provider store={store}>
     <App />
+    </Provider>
   </React.StrictMode>
 );
 

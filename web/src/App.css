@@ -1,3 +1,63 @@
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+div {
+  margin: 0px;
+  padding: 0px;
+}
+
+#root {
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+#l-below-toolbar {
+  height: 400px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+}
+
+#l-content {
+  min-width: 400px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.l-content-content{
+  flex-grow: 1;
+  overflow: auto;
+  box-shadow: inset 0px 8px 8px -8px #0134, inset 0px -8px 8px -8px #0134;
+}
+
+#l-filters {
+  min-width: 400px;
+  flex-grow: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#l-map {
+  height: 400px;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +95,17 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.library-path {
+  font-size: 75%;
+  opacity: 50%;
+}
+
+.exact-size {
+  display: inline-block;
+  position: relative;
+  top: -0.08em;
+  font-size: 80%;
+  opacity: 60%;
 }

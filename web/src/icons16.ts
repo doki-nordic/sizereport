@@ -1,6 +1,19 @@
 
 // Custom icons
-export const Aaa = ['m0.606 13.8c-0.453 0.312-0.166 1.19 0.384 1.19h14c0.55 0 1-0.45 1-1v-7l-8.56 2.12zm14.4-9.81-9.98 0.353 0.692-2.05c-0.185-0.194-0.442-0.303-0.71-0.3h-4c-0.55 0-1 0.45-1 1l1.39 2.66 14.6 0.343v-1c0-0.55-0.45-1-1-1z'];
+export const Ram = [
+    'm11.2 0h-6.4c-0.44 0-0.8 0.72-0.8 1.6v12.8c0 0.88 0.36 1.6 0.8 1.6h6.4c0.44 0 0.8-0.72 0.8-1.6v-12.8c0-0.88-0.36-1.6-0.8-1.6z',
+    'm1 1h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm1 7h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm1 10h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm1 4h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm13 1h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm13 10h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm13 4h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm13 7h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm13 7h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm13 13h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+    'm1 13h2c0.277 0 0.5 0.223 0.5 0.5v1c0 0.277-0.223 0.5-0.5 0.5h-2c-0.277 0-0.5-0.223-0.5-0.5v-1c0-0.277 0.223-0.5 0.5-0.5z',
+];
 
 // Standard icons
 export const Blank = [];
@@ -16,6 +29,7 @@ export { default as SortNumericalDesc } from "@blueprintjs/icons/src/generated-i
 export { default as SortAlphabetical } from "@blueprintjs/icons/src/generated-icons/16px/paths/sort-alphabetical";
 export { default as Sort } from "@blueprintjs/icons/src/generated-icons/16px/paths/sort";
 export { default as CollapseAll } from "@blueprintjs/icons/src/generated-icons/16px/paths/collapse-all";
+export { default as ExpandAll } from "@blueprintjs/icons/src/generated-icons/16px/paths/expand-all";
 export { default as Desktop } from "@blueprintjs/icons/src/generated-icons/16px/paths/desktop";
 export { default as Export } from "@blueprintjs/icons/src/generated-icons/16px/paths/export";
 export { default as Import } from "@blueprintjs/icons/src/generated-icons/16px/paths/import";
